@@ -13,7 +13,9 @@
 		A2C3BA8C1C6A60CC0065FBBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C3BA8A1C6A60CC0065FBBE /* Main.storyboard */; };
 		A2C3BA8E1C6A60CC0065FBBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C3BA8D1C6A60CC0065FBBE /* Assets.xcassets */; };
 		A2C3BA911C6A60CC0065FBBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2C3BA8F1C6A60CC0065FBBE /* LaunchScreen.storyboard */; };
-		A2E57B151C84EB0C00A6D15F /* libMelodySmart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E57B111C84EB0C00A6D15F /* libMelodySmart.a */; };
+		A2E57B1B1C84F3BF00A6D15F /* MelodyControllerXYZ.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E57B1A1C84F3BF00A6D15F /* MelodyControllerXYZ.swift */; };
+		A2E57B221C84FAEB00A6D15F /* libMelodySmart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E57B1C1C84FA3900A6D15F /* libMelodySmart.a */; };
+		A2E57B241C84FFAE00A6D15F /* DevicesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E57B231C84FFAE00A6D15F /* DevicesListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +27,13 @@
 		A2C3BA901C6A60CC0065FBBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2C3BA921C6A60CC0065FBBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2C3BA9C1C6A619D0065FBBE /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		A2E57B111C84EB0C00A6D15F /* libMelodySmart.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMelodySmart.a; path = "../../Downloads/melodysmart_example_swift-1.0.4-1449062751 (1)/libMelodySmart/libMelodySmart.a"; sourceTree = "<group>"; };
-		A2E57B121C84EB0C00A6D15F /* MelodyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MelodyManager.h; path = "../../Downloads/melodysmart_example_swift-1.0.4-1449062751 (1)/libMelodySmart/MelodyManager.h"; sourceTree = "<group>"; };
-		A2E57B131C84EB0C00A6D15F /* MelodySmart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MelodySmart.h; path = "../../Downloads/melodysmart_example_swift-1.0.4-1449062751 (1)/libMelodySmart/MelodySmart.h"; sourceTree = "<group>"; };
-		A2E57B141C84EB0C00A6D15F /* OtaStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtaStructs.h; path = "../../Downloads/melodysmart_example_swift-1.0.4-1449062751 (1)/libMelodySmart/OtaStructs.h"; sourceTree = "<group>"; };
 		A2E57B171C84EBB400A6D15F /* MelodySmart Swift-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MelodySmart Swift-Header.h"; sourceTree = "<group>"; };
+		A2E57B1A1C84F3BF00A6D15F /* MelodyControllerXYZ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MelodyControllerXYZ.swift; sourceTree = "<group>"; };
+		A2E57B1C1C84FA3900A6D15F /* libMelodySmart.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMelodySmart.a; path = libMelodySmart/libMelodySmart.a; sourceTree = "<group>"; };
+		A2E57B1D1C84FA3900A6D15F /* MelodyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MelodyManager.h; path = libMelodySmart/MelodyManager.h; sourceTree = "<group>"; };
+		A2E57B1E1C84FA3900A6D15F /* MelodySmart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MelodySmart.h; path = libMelodySmart/MelodySmart.h; sourceTree = "<group>"; };
+		A2E57B1F1C84FA3900A6D15F /* OtaStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OtaStructs.h; path = libMelodySmart/OtaStructs.h; sourceTree = "<group>"; };
+		A2E57B231C84FFAE00A6D15F /* DevicesListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevicesListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,8 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E57B221C84FAEB00A6D15F /* libMelodySmart.a in Frameworks */,
 				A2153DC91C6BFEDC0091987F /* CoreBluetooth.framework in Frameworks */,
-				A2E57B151C84EB0C00A6D15F /* libMelodySmart.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,8 +52,8 @@
 		A2C3BA7A1C6A60CC0065FBBE = {
 			isa = PBXGroup;
 			children = (
+				A2E57B211C84FA3E00A6D15F /* libMelodySmart */,
 				A2E57B171C84EBB400A6D15F /* MelodySmart Swift-Header.h */,
-				A2E57B161C84EB1400A6D15F /* libMelodySmart */,
 				A2C3BA9C1C6A619D0065FBBE /* CoreBluetooth.framework */,
 				A2C3BA851C6A60CC0065FBBE /* bluetooth */,
 				A2C3BA841C6A60CC0065FBBE /* Products */,
@@ -68,7 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				A2C3BA861C6A60CC0065FBBE /* AppDelegate.swift */,
+				A2E57B231C84FFAE00A6D15F /* DevicesListController.swift */,
 				A2C3BA881C6A60CC0065FBBE /* ViewController.swift */,
+				A2E57B1A1C84F3BF00A6D15F /* MelodyControllerXYZ.swift */,
 				A2C3BA8A1C6A60CC0065FBBE /* Main.storyboard */,
 				A2C3BA8D1C6A60CC0065FBBE /* Assets.xcassets */,
 				A2C3BA8F1C6A60CC0065FBBE /* LaunchScreen.storyboard */,
@@ -77,13 +83,13 @@
 			path = bluetooth;
 			sourceTree = "<group>";
 		};
-		A2E57B161C84EB1400A6D15F /* libMelodySmart */ = {
+		A2E57B211C84FA3E00A6D15F /* libMelodySmart */ = {
 			isa = PBXGroup;
 			children = (
-				A2E57B111C84EB0C00A6D15F /* libMelodySmart.a */,
-				A2E57B121C84EB0C00A6D15F /* MelodyManager.h */,
-				A2E57B131C84EB0C00A6D15F /* MelodySmart.h */,
-				A2E57B141C84EB0C00A6D15F /* OtaStructs.h */,
+				A2E57B1C1C84FA3900A6D15F /* libMelodySmart.a */,
+				A2E57B1D1C84FA3900A6D15F /* MelodyManager.h */,
+				A2E57B1E1C84FA3900A6D15F /* MelodySmart.h */,
+				A2E57B1F1C84FA3900A6D15F /* OtaStructs.h */,
 			);
 			name = libMelodySmart;
 			sourceTree = "<group>";
@@ -161,7 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2C3BA891C6A60CC0065FBBE /* ViewController.swift in Sources */,
+				A2E57B241C84FFAE00A6D15F /* DevicesListController.swift in Sources */,
 				A2C3BA871C6A60CC0065FBBE /* AppDelegate.swift in Sources */,
+				A2E57B1B1C84F3BF00A6D15F /* MelodyControllerXYZ.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

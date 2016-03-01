@@ -30,8 +30,8 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        serviceKeyPressesUDID = CBUUID(string:"0x180F")
-        characteristicKeyPressesUDID = CBUUID(string: "FFE1")
+        //serviceKeyPressesUDID = CBUUID(string:"0x180F")
+        //characteristicKeyPressesUDID = CBUUID(string: "FFE1")
         self.centralManager = CBCentralManager(delegate: self, queue: nil)
     }
     
@@ -75,17 +75,17 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
         print("Peripheral connected: \(peripheral.name)")
         peripheral.delegate = self
-        
+        /*
         let services = [serviceKeyPressesUDID!]
         peripheral.discoverServices(services)
         print("Servicios")
         for s in services {
             print(s)
-        }
+        }*/
         
     }
     
-    func peripheral(peripheral: CBPeripheral, didDiscoverServices error: NSError?) {
+    /*func peripheral(peripheral: CBPeripheral, didDiscoverServices error: NSError?) {
         for service in peripheral.services! {
             print("P: \(peripheral.name) - Discovered service S:'\(service.UUID)'")
             if service.UUID == serviceKeyPressesUDID {
@@ -96,9 +96,9 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
                 peripheral.discoverCharacteristics(characteristics, forService: service as CBService)
             }
         }
-    }
+    }*/
     
-    func peripheral(peripheral: CBPeripheral, didDiscoverCharacteristicsForService service: CBService,
+    /*func peripheral(peripheral: CBPeripheral, didDiscoverCharacteristicsForService service: CBService,
         error: NSError?) {
             for characteristic in service.characteristics! {
                 //---look for the characteristic that allows you to subscribe to---
@@ -108,16 +108,16 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
                         forCharacteristic:characteristic as CBCharacteristic)
                 }
             }
-    }
+    }*/
     
-    func peripheral(peripheral: CBPeripheral, didUpdateNotificationStateForCharacteristic
+    /*func peripheral(peripheral: CBPeripheral, didUpdateNotificationStateForCharacteristic
         characteristic: CBCharacteristic, error: NSError?) {
             if (error != nil) {
                 print("Error changing notification state: \(error!.localizedDescription)")
             } else {
                 print("Characteristic's value subscribed")
             }
-    }
+    }*/
     
     func centralManager(central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: NSError?) {
         if connectedSensorTag == peripheral {
